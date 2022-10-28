@@ -25,15 +25,13 @@ public class OddIndicesTest {
         //act
         int[] actualResult = new OddIndices().oddIndices(arr);
 
-        System.out.println("test1" + Arrays.toString(expectedResult));
-        System.out.println(Arrays.toString(actualResult));
-
         //Assert
         Assert.assertEquals(actualResult, expectedResult);
 
     }
 
     //array has odd length
+    // Expected Result = {590, 985, 68}
     @Test
     public void testOddLengthArray_HappyPath() {
         //AAA
@@ -44,9 +42,6 @@ public class OddIndicesTest {
         //act
         int[] actualResult = new OddIndices().oddIndices(arr);
 
-        System.out.println("test1" + Arrays.toString(expectedResult));
-        System.out.println(Arrays.toString(actualResult));
-
         //Assert
         Assert.assertEquals(actualResult, expectedResult);
 
@@ -54,7 +49,7 @@ public class OddIndicesTest {
 
     /**
      * allay.length = 1, no odd index
-     * return new String[0];
+     * return {};
      */
     @Test
     public void testOddIndicesOneElement_HappyPath() {
